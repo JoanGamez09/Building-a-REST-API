@@ -29,3 +29,8 @@ app.post('/book', (req, res) => {
 
     res.send('Book is added to the database');
 });
+
+app.get('/books', (req, res) => {
+    res.json(books);
+});
+
